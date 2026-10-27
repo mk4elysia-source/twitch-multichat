@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="マルチチャット">
+<meta name="theme-color" content="#1b1a2e">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="stylesheet" href="style.css">
+<title>Twitch マルチチャット</title></head>
+<body>
+<header>
+  <form id="jf"><input id="ch" placeholder="チャンネル名" autocapitalize="off" autocomplete="off"><button>視聴</button></form>
+  <button id="gear" aria-label="設定">設定</button>
+</header>
+<iframe id="player" allowfullscreen allow="autoplay; fullscreen"></iframe>
+<main id="log"></main>
+<footer>
+  <div id="chips"></div>
+  <form id="sf"><input id="msg" placeholder="コメントを入力" autocomplete="off" enterkeyhint="send"><button>送信</button></form>
+</footer>
+<dialog id="dlg">
+  <h3>設定</h3>
+  <label>Client ID<input id="cid" autocapitalize="off" autocomplete="off"></label>
+  <ul id="list"></ul>
+  <button id="add">アカウントを追加</button>
+  <div id="auth"></div>
+  <button id="close">閉じる</button>
+</dialog>
+<script src="app.js"></script>
+</body></html>
